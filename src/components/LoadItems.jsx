@@ -11,7 +11,7 @@ export function LoadItems() {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("https://todo-frontend-fits.onrender.com")
+    fetch("https://todo-app-pranay12.azurewebsites.net/todos")
       .then((res) => res.json())
       .then((items) => {
         const newItems = items.map(todoItemToClientModel);

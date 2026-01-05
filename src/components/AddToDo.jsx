@@ -15,7 +15,7 @@ export function AddToDo() {
     todoTextInput.current.value = "";
     todoDateInput.current.value = "";
 
-    fetch("https://todo-frontend-fits.onrender.com", {
+    fetch("https://todo-app-pranay12.azurewebsites.net/todos", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

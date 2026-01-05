@@ -7,7 +7,7 @@ const TodoItem = ({ id, todoText, todoDate }) => {
   const { deleteTodoItem } = useContext(TodoItemsContext);
 
   const deleteHandler = () => {
-    fetch(`https://todo-frontend-fits.onrender.com/${id}`, {
+    fetch(`https://todo-app-pranay12.azurewebsites.net/todos/${id}`, {
       method: "DELETE",
     })
       .then(res => res.json())
